@@ -28,17 +28,16 @@ const ShopContextProvider = (props) => {
 
      const getTotalCartAmount = () => {
         let totalAmount = 0;
-        for(const item in cartItems)
-        {
+        for (const item in cartItems) {
             if(cartItems[item]>0)
             {
-                let itemInfo = all_product.find((product)=>product.id===Number(item))
+                let itemInfo = all_product.find((products)=>products.id===Number(item))
                 totalAmount += itemInfo.new_price * cartItems[item];
             }
             return totalAmount;
+            
         }
      }
-
      
     
      const contextValue = {getTotalCartAmount,all_product,cartItems, addToCart,removeFromCart }
