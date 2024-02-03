@@ -11,7 +11,7 @@ const CartItems = () => {
   useEffect(() => {
     const amount = getTotalCartAmount(cartItems, all_product);
     setTotalAmount(amount);
-  }, [cartItems]);
+  }, [cartItems, all_product, getTotalCartAmount]);
 
   return (
     <div className="cartitems">
