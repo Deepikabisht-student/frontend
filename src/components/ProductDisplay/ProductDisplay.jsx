@@ -3,7 +3,6 @@ import './ProductDisplay.css'
 import star_icon from '../Assets/star_icon.png'
 import star_dull_icon from '../Assets/star_dull_icon.png'
 import { ShopContext } from '../../context/ShopContext'
-import RelatedProducts from '../RelatedProducts/RelatedProducts'
 
 const ProductDisplay = (props) => {
     const {product} = props;
@@ -58,4 +57,4 @@ const ProductDisplay = (props) => {
   )
 }
 
-export default ProductDisplay
+export default ProductDisplay;
